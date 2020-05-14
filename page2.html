@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Timeless Books</title>
+    </head>
+
+    <body>
+    <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page1.html">Current Tunes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page2.html">Timeless Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page3.html">Comedians to Know</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page4.html">Skincare Routine</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+
+        <h1>What I'm Reading: </h1>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="webpage_style.css"/>
+
+        <h4 id="Introduction_Page2">
+          During Quarantine, I am doing my best to read more book in order to become a better writer and most importantly, to gain some perspective. Here are some life changing books that I read that I believe deserve to be labeled as "timeless".
+        </h4>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ol>
+                <li><span class="book_name">Tiny Beautiful Things</span> by Cheryl Strayed</li>
+                <li><span class="book_name">Unorthodox</span> by Deborah Feldman</li>
+                <li><span class="book_name">Heartburn</span> by Nora Ephron</li>
+                <li><span class="book_name">Little Fires Everywhere</span> by Celeste Ng</li>
+              </ol>
+            </div>
+            <div class="col">
+                <img id="book_image" src="book_aesthetic.jpg"></img>
+            </div>
+          </div>
+          <div class="row">
+            I'm also taking book title suggestions. Please let me know if you have a book that you think is a timeless read in the form below:
+          </div>
+          <div class="row">
+              <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">What is your favorite book?</label>
+                <input type="text" class="form-control" id="booktext"  aria-describedby="bookHelp" placeholder="Enter Book Name">
+                <small id="bookHelp" class="form-text text-muted">Don't worry, this is anonymous</small>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="bookcheck">
+                <label class="form-check-label" for="exampleCheck1">I agree that this is a timeless read.</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+        </div>
+    </body>
+</html>

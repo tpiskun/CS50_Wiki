@@ -1,0 +1,162 @@
+$page_background_color: #d2d8fc;
+$text_color: #41424a;
+$index_text_color: #000000;
+//$hover_background_color: #4a3675;
+$hover_background_color: #d2d8fc;
+$image_height: 550px;
+$image_width: 370px;
+$padding: 10px;
+$th_background_color: #dfe0e6;
+$media_background_color: #edfff4;
+$cleanSkincareMessagecolor:#332445;
+$vCleanSkincareMessageText: "Clean at Sephora is formulated without a list of over 50 ingredients, including sulfates (SLS and SLES), parabens, phthalates, and more.";
+
+  /* body{
+    background-color: $page_background_color;
+  } */
+
+// Index Page Styling
+  h1{
+    color: $text_color;
+    background-color: $page_background_color;
+    font-size: 30px;
+    align-content: center;
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  li, h4{
+    color: $index_text_color;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 15px;
+    padding: 15px;
+  }
+
+  li:hover {
+    background-color: $hover_background_color;
+  }
+
+  a:visited , a:link, a:active{
+    color: black;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  #introduction{
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+  }
+
+  .grid-item {
+    float:left;
+    width: auto;
+    padding: 5px;
+  }
+
+  img{
+      height: $image_height;
+      width: $image_width;
+      padding-left: $padding;
+      padding-right: $padding;
+  }
+
+  //NavBar Styling
+  #navbarNav{
+    background-color: white;
+    height: 20px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .nav-item{
+    font-size: 15px;
+    font-weight:bold;
+  }
+
+  // Page 1 Styling
+  #Introduction_Page1, #Introduction_Page2 ,#Introduction_Page3{
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+  }
+
+  table{
+    font-size: 19px;
+    border: 1px solid $text_color;
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .table_header{
+    font-size: 22px;
+    text-align: center;
+    background-color: $th_background_color;
+  }
+
+  th, td {
+      border: 1px solid black;
+      padding: 5px;
+      text-align: left;
+  }
+
+    // Page 2 Styling
+    .row{
+      font-size: 20px;
+    }
+
+    .book_name{
+      font-style: italic;
+    }
+
+    #book_image{
+      width: auto;
+      length: auto;
+      padding-bottom: 20px;
+    }
+
+    // Page 3 Styling
+    h6{
+      padding-left: 15px;
+      text-align: left;
+    }
+
+    @media (max-width: 500px) {
+      body {
+        margin: auto;
+        background-color: $media_background_color;
+        top: 50%;
+        left: 50%;
+      }
+    }
+
+    // Page 4 Styling
+    %clean_skin_message{
+      font-size:18px;
+      font-weight: bold;
+      font-style: italic;
+      color: $cleanSkincareMessagecolor;
+    }
+
+    .cleanMessage::before{
+      content:$vCleanSkincareMessageText;
+      @extend %clean_skin_message;
+    }
+
+    #self_care_img{
+      margin-left: auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      height: auto;
+      width: auto;
+    }

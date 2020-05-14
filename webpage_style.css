@@ -1,0 +1,142 @@
+/* body{
+  background-color: $page_background_color;
+} */
+h1 {
+  color: #41424a;
+  background-color: #d2d8fc;
+  font-size: 30px;
+  align-content: center;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+li, h4 {
+  color: #000000;
+  text-align: left;
+  font-size: 25px;
+  padding-left: 15px;
+  padding: 15px;
+}
+
+li:hover {
+  background-color: #d2d8fc;
+}
+
+a:visited, a:link, a:active {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+#introduction {
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.grid-item {
+  float: left;
+  width: auto;
+  padding: 5px;
+}
+
+img {
+  height: 550px;
+  width: 370px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#navbarNav {
+  background-color: white;
+  height: 20px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-item {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#Introduction_Page1, #Introduction_Page2, #Introduction_Page3 {
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+table {
+  font-size: 19px;
+  border: 1px solid #41424a;
+  border-collapse: collapse;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table_header {
+  font-size: 22px;
+  text-align: center;
+  background-color: #dfe0e6;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: left;
+}
+
+.row {
+  font-size: 20px;
+}
+
+.book_name {
+  font-style: italic;
+}
+
+#book_image {
+  width: auto;
+  length: auto;
+  padding-bottom: 20px;
+}
+
+h6 {
+  padding-left: 15px;
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: auto;
+    background-color: #edfff4;
+    top: 50%;
+    left: 50%;
+  }
+}
+.cleanMessage::before {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: #332445;
+}
+
+.cleanMessage::before {
+  content: "Clean at Sephora is formulated without a list of over 50 ingredients, including sulfates (SLS and SLES), parabens, phthalates, and more.";
+}
+
+#self_care_img {
+  margin-left: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+  width: auto;
+}
+
+/*# sourceMappingURL=webpage_style.css.map */
