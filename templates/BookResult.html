@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{Book.title}}
+{% endblock %}
+
+{% block body %}
+<h1>{{Book.title}}</h1>
+    <h5> Book Details: </h5>
+    <table id="BookDetails">
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>ISBN</th>
+        <th>Publication Year</th>
+        <th>Average Rating Statistics</th>
+        <th>Number of Ratings Statistics</th>
+      </tr>
+      <tr>
+        <td>{{Book.title}}</td>
+        <td>{{Book.author}}</td>
+        <td>{{Book.isbn}}</td>
+        <td>{{Book.year}}</td>
+        <td>{{AverageRating}}</td>
+        <td>{{NumberOfRating}}</td>
+      </tr>
+    </table>
+
+{% if ReviewsExist%}
+    <h5 id="OtherUsrHdr">Other Users' Ratings: </h5>
+      <table id="BookRatings">
+        <tr>
+          <th>User</th>
+          <th>Rating</th>
+          <th>Reason</th>
+        </tr>
+      {% for review in book_reviews %}
+        <tr>
+            <td> {{review.username}}</td>
+            <td> {{review.book_rating}} </td>
+            <td> {{review.book_rating_text}} </td>
+        </tr>
+        {% endfor %}
+      </table>
+{% endif %}
+
+{% if RatingExists %}
+    <h5>Leave Your Rating Here: </h5>
+    <p> On a scale of 1-5, rate this book where 5 is the highest value and 1 is the lowest. This data will help our users decide on their next great read!</p>
+
+  <form method="post">
+    <div class="form-row">
+      <div class="form-group col-md-2">
+        <label for="inputBookRating">Book Rating: </label>
+        <select name="inputBookRating" id="inputBookRating" class="form-control">
+          <option selected>Choose...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputBookRatingText">Any Additional Thoughts: </label>
+        <input name="inputBookRatingText" type="text" class="form-control" id="inputBookRatingText" placeholder="Type in your comments here">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="submit">Submit Your Review: </label>
+        <button type="submit" class="form-control btn btn-primary mb-2">Submit</button>
+      </div>
+    </div>
+  </form>
+{% endif %}
+{% endblock %}

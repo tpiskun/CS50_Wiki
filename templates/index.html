@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Users
+{% endblock %}
+
+<link rel="stylesheet" href="style.css"/>
+
+{% block body %}
+{% if session %}
+  <h1>{{message}}, {{username}}!</h1>
+    <p>Here at GoodReads, we want to ensure that you have all of the resources to pick out your next great read. Don't forget to leave reviews for individual books, and see the reviews made by other people.</p>
+
+{% else %}
+  <h1>Welcome to GoodReads</h1>
+    <p>Here at GoodReads, we want to ensure that our users have all of the resources to pick out their next great read. After creating an account, users can leave reviews for individual book as well as see reviews on books that others have read. So what are you waiting for? Sign up today!</p>
+
+    <p>Login below: </p>
+      <form action="{{ url_for('index') }}" method="post">
+          <div class="form-group">
+              <input class="form-control" name="usr" placeholder="Username">
+          </div>
+
+          <div class="form-group">
+              <input class="form-control" name="pass" type="password" placeholder="Password">
+          </div>
+
+          <div class="form-group">
+              <button class="btn btn-primary" type="submit">Login</button>
+          </div>
+      </form>
+
+      <p>To create an account click on the Register button below: </p>
+        <form class="form-inline" action="{{ url_for('Register')}}" name="Register">
+          <button class="btn btn-primary" type="submit">Register</button>
+        </form>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,82 @@
+.hero-image {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-repeat: repeat-y;
+  justify-content: center;
+}
+
+.hero-image::before {
+  content: "";
+  background-image: url("covers.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.15;
+}
+
+.container {
+  position: relative;
+  color: black;
+  opacity: 1;
+  font-size: 18px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+#NavBar {
+  background-color: #d1e9ff;
+}
+
+#Search {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.BookListItem {
+  padding-bottom: 5px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+a:visited, a:link, a:active {
+  color: black;
+}
+
+a:hover {
+  background-color: #d1e9ff;
+  text-decoration: none;
+}
+
+#OtherUsrHdr {
+  padding-top: 15px;
+}
+
+#BookDetails {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  text-align: center;
+}
+
+#BookRatings {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+th, td {
+  padding-left: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

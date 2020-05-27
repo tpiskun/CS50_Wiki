@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{resultQuery}}
+{% endblock %}
+
+{% block body %}
+  <h1>Search Results for: {{resultQuery}}</h1>
+    <p> Click on the link below to get more information about this book: </p>
+      <ul>
+        {% for item in books %}
+          <li class="BookListItem">
+            <a href="{{url_for('BookId', Book_id=item.id)}}">
+              ISBN: {{item.isbn}} for {{item.title}} by {{item.author}}, written {{item.year}}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+{% endblock %}
