@@ -1,0 +1,2 @@
+# Reddit
+Reddit is an American social news aggregation, web content rating, and discussion website. Registered members submit content to the site such as links, text posts, and images, which are then voted up or down by other members

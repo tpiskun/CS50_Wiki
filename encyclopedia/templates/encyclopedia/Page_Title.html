@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ title | safe }}
+{% endblock %}
+
+{% block body %}
+    {{ content| safe}}
+      <a href="{% url 'encyclopedia:edit_page' title %}" class="btn btn-info btn-sm">
+        <span class="glyphicon glyphicon-edit"></span> Edit Wiki
+      </a>
+{% endblock %}
