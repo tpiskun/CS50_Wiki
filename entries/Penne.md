@@ -1,0 +1,2 @@
+# Penne
+Penne is an extruded type of pasta with cylinder-shaped pieces, their ends cut at a bias. Penne is the plural form of the Italian penna (meaning feather but pen as well), deriving from Latin penna (meaning "feather" or "quill"), and is a cognate of the English word pen. When this format was created, it was intended to imitate the then-ubiquitous fountain pen's steel nibs.
