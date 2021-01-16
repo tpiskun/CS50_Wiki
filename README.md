@@ -9,15 +9,15 @@ Project1 Submission (Wiki) for the 2020 version of Harvard's CS50: Web Programmi
 [![Build Status](https://travis-ci.com/username/projectname.svg?branch=master)](https://travis-ci.com/username/projectname)
 
 ## Features
-This project allows the user to: 
-  -Lookup an Existing Wiki
-  -Edit an Existing Wiki
-  -Create a new Wiki
-  -Select a Wiki at Random 
-  -Search for a Wiki using a search bar
-  -Can find a wiki based of text matching
-  -Visit a wiki by typing in the specific URL
-  -User writes the Wiki in Markdown and the Application converts it automatically
+This project allows the user to:
+  * Lookup an Existing Wiki
+  * Edit an Existing Wiki
+  * Create a new Wiki
+  * Select a Wiki at Random
+  * Search for a Wiki using a search bar
+  * Can find a wiki based of text matching
+  * Visit a wiki by typing in the specific URL
+  * User writes the Wiki in Markdown and the Application converts it automatically
 
 Leveraging pre-existing Django features, there is a file called views.py that outlines all of the Python methods and functionalities.
 
@@ -26,7 +26,7 @@ Additionally, there is a file called urls.py that maintains all of the different
 Lastly, there is an entries folder which contains all of the markup .md files which contains the data for the HTML pages. The actual HTML files for these pages are automatically populated and stored in the templates file.
 
 ## Installation
-This project requires Django. 
+This project requires Django.
 
 ## API Reference
 Since this project uses Django, I used the Django documentation to research and clarify any additional features and functionality used in this project:
